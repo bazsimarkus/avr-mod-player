@@ -1,0 +1,91 @@
+# =========================
+
+# MPLAB X / NetBeans files
+
+# =========================
+
+# private IDE settings (machine-specific)
+
+nbproject/private/
+
+# generated project metadata
+
+nbproject/Makefile-*.mk
+nbproject/Package-*.bash
+nbproject/configurations.xml
+
+# auto-generated build flags
+
+.generated_files/
+
+# =========================
+
+# Build output (DO NOT COMMIT)
+
+# =========================
+
+build/
+dist/
+debug/
+
+# =========================
+
+# Compiled / intermediate files
+
+# =========================
+
+*.o
+*.d
+*.elf
+*.hex
+*.map
+*.lst
+*.sym
+*.lss
+*.eep
+*.srec
+*.bin
+
+# =========================
+
+# MPLAB temporary files
+
+# =========================
+
+*.cod
+*.cof
+*.p1
+*.p2
+*.p3
+*.pre
+
+# =========================
+
+# OS & editor junk
+
+# =========================
+
+# Windows
+
+Thumbs.db
+Desktop.ini
+
+# macOS
+
+.DS_Store
+
+# Linux
+
+*~
+
+# VS Code
+
+.vscode/
+
+# JetBrains
+
+.idea/
+
+# swap files
+
+*.swp
