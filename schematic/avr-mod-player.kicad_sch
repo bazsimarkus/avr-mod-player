@@ -11640,7 +11640,7 @@
 				)
 			)
 		)
-		(property "Value" "470R"
+		(property "Value" "10k"
 			(at 137.16 151.13 90)
 			(effects
 				(font
@@ -12441,7 +12441,7 @@
 				)
 			)
 		)
-		(property "Value" "470R"
+		(property "Value" "10k"
 			(at 137.16 173.99 90)
 			(effects
 				(font
@@ -14390,7 +14390,7 @@
 				)
 			)
 		)
-		(property "Value" "470R"
+		(property "Value" "10k"
 			(at 137.16 162.56 90)
 			(effects
 				(font
@@ -14495,16 +14495,16 @@
 			)
 		)
 		(pin "4"
-			(uuid "851fd421-6068-4e5a-9111-6d7bfde1e598")
+			(uuid "851fd421-6068-4e5a-9111-6d7bfde1e599")
 		)
 		(pin "2"
-			(uuid "69412e37-8e53-46d5-b761-bb3fa235026a")
+			(uuid "69412e37-8e53-46d5-b761-bb3fa235026b")
 		)
 		(pin "3"
-			(uuid "9bda5b4c-09ec-4842-b63d-c173310fc77c")
+			(uuid "9bda5b4c-09ec-4842-b63d-c173310fc77d")
 		)
 		(pin "1"
-			(uuid "cdc59f21-27b9-4a73-bf74-27d345d9c309")
+			(uuid "cdc59f21-27b9-4a73-bf74-27d345d9c30a")
 		)
 		(instances
 			(project ""
@@ -16588,7 +16588,7 @@
 				)
 			)
 		)
-		(property "Value" "470R"
+		(property "Value" "10k"
 			(at 137.16 185.42 90)
 			(effects
 				(font
