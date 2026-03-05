@@ -18105,6 +18105,18 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "AM29F040B"
+		(at 31.496 30.734 0)
+		(layer "F.SilkS")
+		(uuid "1127b10b-20c3-4b64-9a49-03badf8a8511")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "CHANNELS"
 		(at 92.71 8.382 90)
 		(layer "F.SilkS")
@@ -18141,6 +18153,18 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "MCP6022"
+		(at 82.296 56.642 90)
+		(layer "F.SilkS")
+		(uuid "28512c5a-4edd-4d57-89f0-ef63d7389928")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "RIGHT"
 		(at 88.884 34.544 90)
 		(layer "F.SilkS")
@@ -18153,8 +18177,8 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "5V"
-		(at 1.524 44.196 0)
+	(gr_text "VCC"
+		(at 1.016 44.196 0)
 		(layer "F.SilkS")
 		(uuid "3fa58466-4659-4da7-a0f0-69d042d95a8a")
 		(effects
@@ -18317,6 +18341,18 @@
 			(font
 				(size 0.508 0.508)
 				(thickness 0.127)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "74HC595"
+		(at 82.296 38.1 90)
+		(layer "F.SilkS")
+		(uuid "97e57b61-cbba-4120-9732-d0f4e760a36e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
 			)
 			(justify left bottom)
 		)
@@ -18535,6 +18571,18 @@
 		(at 91.874 21.658 0)
 		(layer "F.SilkS")
 		(uuid "f076a1ce-9845-4ef4-9c0e-0e8a46e52fe3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "ATMEGA32"
+		(at 37.846 49.276 0)
+		(layer "F.SilkS")
+		(uuid "f2618ee6-35e5-4c24-9b5b-4e2a2e31c627")
 		(effects
 			(font
 				(size 1 1)
