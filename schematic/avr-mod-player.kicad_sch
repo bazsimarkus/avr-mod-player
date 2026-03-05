@@ -2391,6 +2391,156 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "StockLib:1N5819"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1N5819"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.vishay.com/docs/88525/1n5817.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "40V 1A Schottky Barrier Rectifier Diode, DO-41"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*DO?41*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "1N5819_0_1"
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "1N5819_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "StockLib:2x5 Shrouded Box Header"
 			(pin_names
 				(offset 1.016)
@@ -6150,7 +6300,7 @@
 	)
 	(text "USBasp programming header"
 		(exclude_from_sim no)
-		(at 13.97 146.05 0)
+		(at 14.732 138.684 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7379,16 +7529,6 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 157.48) (xy 27.94 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "28ccccf2-2532-4743-b1c2-3663f3159cc3")
-	)
-	(wire
-		(pts
 			(xy 38.1 180.34) (xy 38.1 182.88)
 		)
 		(stroke
@@ -7956,6 +8096,16 @@
 			(type default)
 		)
 		(uuid "5b98b9e5-12c3-4849-af98-ec906bf87e1a")
+	)
+	(wire
+		(pts
+			(xy 27.94 147.32) (xy 27.94 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5bd58a64-e1f3-43bb-975d-7b64f71c8f43")
 	)
 	(bus
 		(pts
@@ -9176,6 +9326,16 @@
 			(type default)
 		)
 		(uuid "b7b35756-069b-420f-8a4b-2469fa973ef9")
+	)
+	(wire
+		(pts
+			(xy 27.94 156.21) (xy 27.94 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b87b6830-2f01-49ef-92a9-bc748a839a0b")
 	)
 	(wire
 		(pts
@@ -12398,7 +12558,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 27.94 157.48 0)
+		(at 27.94 147.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12407,7 +12567,7 @@
 		(fields_autoplaced yes)
 		(uuid "484d725f-4941-45af-b081-e0f7fd0bafe1")
 		(property "Reference" "#PWR07"
-			(at 27.94 161.29 0)
+			(at 27.94 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12416,7 +12576,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 27.94 152.4 0)
+			(at 27.94 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12424,7 +12584,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 27.94 157.48 0)
+			(at 27.94 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12433,7 +12593,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 27.94 157.48 0)
+			(at 27.94 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12442,7 +12602,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 27.94 157.48 0)
+			(at 27.94 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12651,6 +12811,76 @@
 			(project "avr-mod-player"
 				(path "/ddc08fb2-4e50-46d6-b134-b09428b2126c"
 					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "StockLib:1N5819")
+		(at 27.94 152.4 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "597be55c-7294-459e-91a0-8367f31293b2")
+		(property "Reference" "D7"
+			(at 30.48 150.8124 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1N5819"
+			(at 30.48 153.3524 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+			(at 23.495 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/88525/1n5817.pdf"
+			(at 27.94 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40V 1A Schottky Barrier Rectifier Diode, DO-41"
+			(at 27.94 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2c5963cd-e658-4f02-935f-f84b22c8a5a9")
+		)
+		(pin "1"
+			(uuid "b36ef190-4482-4357-b6c9-ae0a7928d311")
+		)
+		(instances
+			(project ""
+				(path "/ddc08fb2-4e50-46d6-b134-b09428b2126c"
+					(reference "D7")
 					(unit 1)
 				)
 			)
