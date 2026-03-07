@@ -2219,7 +2219,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
 			(at 97.4852 58.42 0)
 			(effects
 				(font
@@ -2701,7 +2701,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "StockLib:C_100nF_L7.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 			(at 151.4348 80.01 0)
 			(effects
 				(font
@@ -3106,7 +3106,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
 			(at 178.7652 86.36 0)
 			(effects
 				(font

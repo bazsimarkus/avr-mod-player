@@ -4,7 +4,7 @@
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
             <name>avr-mod-player</name>
-            <creation-uuid>56ebaced-01b0-450b-9ffb-7e8c7ca8b52e</creation-uuid>
+            <creation-uuid>72d2075b-8a2f-4ffa-8eaa-29b6218fd1d0</creation-uuid>
             <make-project-type>0</make-project-type>
             <sourceEncoding>ISO-8859-1</sourceEncoding>
             <make-dep-projects/>
@@ -12,6 +12,10 @@
             <confList>
                 <confElem>
                     <name>default</name>
+                    <type>2</type>
+                </confElem>
+                <confElem>
+                    <name>flash</name>
                     <type>2</type>
                 </confElem>
             </confList>

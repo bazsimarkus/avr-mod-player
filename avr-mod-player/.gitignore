@@ -1,91 +1,69 @@
 # =========================
-
 # MPLAB X / NetBeans files
-
 # =========================
-
-# private IDE settings (machine-specific)
-
+# Private IDE settings (machine-specific and window layouts)
 nbproject/private/
 
-# generated project metadata
-
-nbproject/Makefile-*.mk
+# Auto-generated project Makefiles and package scripts
+# (MPLAB regenerates these automatically based on configurations.xml)
+nbproject/Makefile-*
 nbproject/Package-*.bash
-nbproject/configurations.xml
 
-# auto-generated build flags
-
+# Auto-generated build flags and cache files
 .generated_files/
+nbactions.xml
+nb-configuration.xml
+funclist
 
 # =========================
-
-# Build output (DO NOT COMMIT)
-
+# Build output directories (DO NOT COMMIT)
 # =========================
-
 build/
 dist/
 debug/
+nbbuild/
+nbdist/
+disassembly/
+html/
 
 # =========================
-
-# Compiled / intermediate files
-
+# Compiled / intermediate files (AVR / XC8 / GCC)
 # =========================
-
+# Object files and dependencies
 *.o
 *.d
+*.obj
+*.obj.dmp
+
+# Binaries and executables
 *.elf
 *.hex
+*.bin
+*.srec
+*.eep
+
+# Debugging, mapping, and listing files
 *.map
 *.lst
-*.sym
 *.lss
-*.eep
-*.srec
-*.bin
-
-# =========================
-
-# MPLAB temporary files
-
-# =========================
-
+*.sym
+*.sdb
 *.cod
 *.cof
+
+# PIC/Legacy specific (safe to keep ignored even for AVR)
 *.p1
 *.p2
 *.p3
 *.pre
 
 # =========================
-
 # OS & editor junk
-
 # =========================
-
-# Windows
-
 Thumbs.db
 Desktop.ini
-
-# macOS
-
 .DS_Store
-
-# Linux
-
 *~
-
-# VS Code
-
-.vscode/
-
-# JetBrains
-
-.idea/
-
-# swap files
-
 *.swp
+.vscode/
+.idea/
