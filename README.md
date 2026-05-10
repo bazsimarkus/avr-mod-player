@@ -15,6 +15,7 @@ An ATmega32-based ProTracker MOD music player with AM29F040B parallel flash memo
   - [Programming the Flash Chip](#programming-the-flash-chip)
   - [Building and Flashing the Firmware](#building-and-flashing-the-firmware)
 - [Schematic](#schematic)
+  - [Bill of Materials for the Main Board](#bill-of-materials-for-the-main-board)
 - [How It Works](#how-it-works)
   - [Flash Memory Interface](#flash-memory-interface)
   - [Audio Output](#audio-output)
@@ -22,6 +23,7 @@ An ATmega32-based ProTracker MOD music player with AM29F040B parallel flash memo
   - [Channel Activity LEDs](#channel-activity-leds)
   - [Power Supply and Protection](#power-supply-and-protection)
 - [Speaker Extension Board](#speaker-extension-board)
+  - [Bill of Materials for the Speaker Extension Board](#bill-of-materials-for-the-speaker-extension-board)
 - [Documentation](#documentation)
 - [Acknowledgments](#acknowledgments)
 
@@ -129,6 +131,59 @@ The project was developed with MPLAB X IDE v6.25 and the Microchip ATmega_DFP 3.
 
 The full KiCad project files (schematic, PCB layout, and project file) are in the `schematic/` directory.
 
+### Bill of Materials for the Main Board
+
+| Ref | Value | Description | Qty |
+|-----|-------|-------------|-----|
+| **ICs** ||||
+| U1 | ATmega32A-P | 16 MHz, 32 KB Flash, 2 KB SRAM, DIP-40 | 1 |
+| U2 | AM29F040B-90PC | 4 Mbit NOR flash (512K×8), 90 ns, DIP-32 | 1 |
+| U3 | 74HC595 | 8-bit shift register, 3-state outputs, DIP-16 | 1 |
+| U4 | MCP6022 | Dual rail-to-rail op-amp, DIP-8 | 1 |
+| U5 | L7805 | 5 V 1.5 A linear voltage regulator, TO-220 | 1 |
+| **Crystal** ||||
+| Y1 | 16 MHz | HC49-U vertical | 1 |
+| **Capacitors (polarized)** ||||
+| C1 | 10 µF | Electrolytic, radial, D4.0 mm P2.00 mm | 1 |
+| C7 | 220 µF | Electrolytic, radial, D5.0 mm P2.00 mm | 1 |
+| C8 | 220 µF | Electrolytic, radial, D5.0 mm P2.00 mm | 1 |
+| C9 | 10 µF | Electrolytic, radial, D4.0 mm P2.00 mm | 1 |
+| C12 | 10 µF | Electrolytic, radial, D4.0 mm P2.00 mm | 1 |
+| **Capacitors (unpolarized)** ||||
+| C2 | 100 nF | Film/MLCC, P5.00 mm | 1 |
+| C3 | 22 pF | Ceramic, P2.50 mm | 1 |
+| C4 | 22 pF | Ceramic, P2.50 mm | 1 |
+| C5 | 10 nF | Ceramic disc, P2.50 mm | 1 |
+| C6 | 10 nF | Ceramic disc, P2.50 mm | 1 |
+| C10 | 0.33 µF | Film, P5.00 mm | 1 |
+| C11 | 0.1 µF | Film, P5.00 mm | 1 |
+| C13 | 100 nF | Film/MLCC, P5.00 mm | 1 |
+| C14 | 100 nF | Film/MLCC, P5.00 mm | 1 |
+| C15 | 100 nF | Film/MLCC, P5.00 mm | 1 |
+| **Resistors (all 1/4 W axial)** ||||
+| R1, R2 | 4.7 kΩ | PWM filter pull-up | 2 |
+| R3, R4, R7, R8, R9, R10, R12 | 10 kΩ | Pull-ups / biasing / LED current limit | 7 |
+| R5, R6 | 1 kΩ | Audio output series | 2 |
+| R11 | 470 Ω | Power LED current limiter | 1 |
+| **Diodes** ||||
+| D1, D2, D3, D4 | LED 3 mm green | Channel activity indicators | 4 |
+| D5 | 1N4001 | 50 V 1 A rectifier, DO-41 | 1 |
+| D6 | LED 5 mm red | Power indicator | 1 |
+| D7 | 1N5819 | 40 V 1 A Schottky, DO-41 (reverse polarity protection) | 1 |
+| **Switches** ||||
+| S1 | Toggle 7×7 mm DPDT | Power on/off (E-Switch TL2230OAF140) | 1 |
+| S2 | Tact 6×6 mm | Reset (CUI TS02-66-100-BK-260-LCR-D) | 1 |
+| **Connectors** ||||
+| J1 | 2×5 shrouded box header | USBasp ISP header (Würth 61201021621) | 1 |
+| J2 | DC-005 barrel jack | 2.1 mm center-positive | 1 |
+| J3 | Dual RCA (AV2-8.4-45) | Stereo audio output | 1 |
+| J4 | 2×4 pin socket | Speaker board expansion, 2.54 mm | 1 |
+| **Recommended sockets** ||||
+| - | 40-pin DIP socket | For U1 (ATmega32A) | 1 |
+| - | 32-pin DIP socket | For U2 (AM29F040B) | 1 |
+| - | 16-pin DIP socket | For U3 (74HC595) | 1 |
+| - | 8-pin DIP socket | For U4 (MCP6022) | 1 |
+
 ---
 
 ## How It Works
@@ -201,6 +256,32 @@ An optional LM386 speaker extension board can be connected to the 2x4 pin header
 ![Speaker Extension Board connected to the main board](/docs/images/avr-mod-player-speaker-board-2.jpg)
 
 The KiCad project files for the speaker board are in `extension-boards/speaker-board/`.
+
+### Bill of Materials for the Speaker Extension Board
+
+| Ref | Value | Description | Qty |
+|-----|-------|-------------|-----|
+| **ICs** ||||
+| U1 | LM386 | Low-voltage audio power amplifier, DIP-8 | 1 |
+| **Capacitors (polarized)** ||||
+| C1 | 100 µF | Electrolytic, radial, D5.0 mm P2.00 mm | 1 |
+| C3 | 1 µF | Electrolytic, radial, D4.0 mm P2.00 mm | 1 |
+| C4 | 10 µF | Electrolytic, radial, D4.0 mm P2.00 mm (bypass) | 1 |
+| C6 | 220 µF | Electrolytic, radial, D5.0 mm P2.00 mm (output coupling) | 1 |
+| **Capacitors (unpolarized)** ||||
+| C2 | 0.1 µF | Film, P5.00 mm (decoupling) | 1 |
+| C5 | 47 nF | Ceramic disc, P2.50 mm (Zobel network) | 1 |
+| **Resistors (all 1/4 W axial)** ||||
+| R1, R2 | 300 kΩ | Input mixing (L + R → mono) | 2 |
+| R3 | 10 Ω | Zobel network series | 1 |
+| **Potentiometer** ||||
+| RV1 | Trimpot 3362-P | Volume adjustment | 1 |
+| **Speaker** ||||
+| LS1 | CVS-2308 | 23 mm, 0.1 W, 8 Ω (CUI Devices) | 1 |
+| **Connectors** ||||
+| J1 | 2×4 pin header | Mates with main board J4, 2.54 mm vertical | 1 |
+| **Recommended sockets** ||||
+| - | 8-pin DIP socket | For U1 (LM386) | 1 |
 
 ---
 
